@@ -1,6 +1,8 @@
 #!/bin/bash
-git add .
-echo "enter commit"
+echo "Enter fileName"
+read fileName
+git add $fileName
+echo "Enter commit"
 read commit
 git commit -m "$commit"
 git push
